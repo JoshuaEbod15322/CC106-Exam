@@ -1,13 +1,11 @@
-let wallet = 0;
-let num1 = 100;
-let num2 = 50;
-
 function add() {
-
-    const wallet = parseFloat(document.getElementById('amount').value);
+    let wallet = parseFloat(document.getElementById('amount').value);
     const num1 = parseFloat(document.getElementById('itm1').value);
     const num2 = parseFloat(document.getElementById('itm2').value);
+    
+    let groceryTotal = (num1 * 100) + (num2 * 50);
+
     document.getElementById('result1').textContent = wallet;
-    document.getElementById('result').textContent = num1 + num2;
-    document.getElementById('remain').textContent = num1 * num2 - wallet;
+    document.getElementById('result').textContent = groceryTotal;
+    document.getElementById('remain').textContent = wallet - groceryTotal;
 }
