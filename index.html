@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+
+
+    <h1>Wallet</h1>
+    <p>Wallet amount</p><input id="amount" type="number" placeholder="Enter ">
+
+    <h4>Groccery Items</h4>
+    <p>Rice P100 per kilo</p><input id="itm1" type="number" placeholder="Enter quantity">
+    <p>Apple P50 per kilo</p><input id="itm2" type="number" placeholder="Enter quantity">
+    <br><br>
+    <button onclick="add()">Calculate</button>
+
+    <h4>Result</h4>
+
+    <p>Wallet Amount: </p><span id="result1">0</span>
+    <p>Groccery Total: </p><span id="result">0</span>
+    <p>Remaining wallet: </p><span id="remain">0</span>
+
+    <script src="script.js"></script>
 </body>
 </html>
